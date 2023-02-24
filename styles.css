@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #181877;
+}
+.container{
+    position: relative;
+    width:500px ;
+    height: 105px;
+    background: white;
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 18px;
+    font-family: 'Roboto';
+    transition: 0.6s ease-out;
+}
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-box input{
+    font-size: 100%;
+    width: 80%;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 32px;
+}
+
+.search-box input::placeholder{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.search-box button{
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    color: #181877;
+    background: rgb(208, 215, 224);
+    border-radius: 50%;
+    font-size: 22px;
+    transition: 0.4s ease;
+}
+.search-box button:hover{
+    color: #fff;
+    background-color:#181877;
+}
+
+.search-box i{
+    color: #181877;
+    font-size: 30px;
+}
+.not-found img{
+    width: 60%;
+    margin-top: 30px;
+}
+.weather-box{
+    text-align: center;
+}
+.weather-box .temperature{
+    position: relative;
+    color: #181877;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: -16px;
+}
+.weather-box .temperature span{
+    position: absolute;
+    margin-left: 4px;
+    font-size: 20px;
+}
+.weather-box .description{
+    color: #181877;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+    gap: 10px;
+}
+.weather-detail{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top:  40px;
+     display: none;
+}
+
+.not-found {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  display: none;
+}
+
+.not-found p{
+    font-size: larger;
+    font-weight: 900;
+   
+}
+.fade-in{
+    animation: 0.5 fadeIn forwards;
+
+}
+.weather-box img{
+    width: 60%;
+    margin-top: 30px;
+}
+
+.hum,.des{
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: monospace;
+}
