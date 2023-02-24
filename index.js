@@ -50,6 +50,11 @@ search.addEventListener('click', () => {
                 if(mood){
                     picture.src='https://cdn-icons-png.flaticon.com/512/1146/1146858.png'
                 }
+                mood=text.includes("Sun");
+                if(mood){
+                    picture.src='https://cdn-icons-png.flaticon.com/512/979/979585.png'
+                    console.log("sunny"+mood);
+                }
                 mood=text.includes("sun");
                 if(mood){
                     picture.src='https://cdn-icons-png.flaticon.com/512/979/979585.png'
