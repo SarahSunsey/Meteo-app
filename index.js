@@ -37,9 +37,12 @@ search.addEventListener('click', () => {
                 weatherBox.style.display='none'
                 return;
               }
-              error.style.display='none';
+              
               if (response.location && response.current) {
+                error.style.display='none';
                 container.style.height = '600px';
+                weatherBox.style.display='block'
+                
                let regionn=response.location.name;
                region.innerHTML=regionn;
                 let text =response.current.condition.text;
@@ -50,7 +53,7 @@ search.addEventListener('click', () => {
                 if(mood){
                     picture.src='https://cdn-icons-png.flaticon.com/512/1146/1146858.png'
                 }
-                mood=text.includes("Sun");
+                mood=text.includes("Sunny");
                 if(mood){
                     picture.src='https://cdn-icons-png.flaticon.com/512/979/979585.png'
                     console.log("sunny"+mood);
